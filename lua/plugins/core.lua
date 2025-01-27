@@ -4,13 +4,6 @@ return {
   },
 
   {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "onedark",
-    },
-  },
-
-  {
     "okuuva/auto-save.nvim",
     config = function()
       require("auto-save").setup({
@@ -21,5 +14,12 @@ return {
         },
       })
     end,
+  },
+
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "onedark",
+    },
   },
 }
