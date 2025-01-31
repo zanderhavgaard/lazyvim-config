@@ -17,6 +17,15 @@ return {
   },
 
   {
+    "folke/todo-comments.nvim",
+    opts = {
+      search = {
+        pattern = [[\b(KEYWORDS)\b]], -- match without the extra colon. You'll likely get false positives
+      },
+    },
+  },
+
+  {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = "onedark",
