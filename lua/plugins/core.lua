@@ -23,6 +23,11 @@ return {
   --   },
   -- },
 
+  -- jsonnet filetype support
+  {
+    "google/vim-jsonnet",
+  },
+
   -- auto-save on focus lost
   {
     "okuuva/auto-save.nvim",
