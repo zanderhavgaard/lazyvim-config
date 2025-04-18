@@ -12,9 +12,6 @@ return {
   {
     "Mofiqul/dracula.nvim",
   },
-  {
-    "rebelot/kanagawa.nvim",
-  },
   -- set default colorscheme
   -- {
   --   "LazyVim/LazyVim",
@@ -22,11 +19,6 @@ return {
   --     colorscheme = "onedark",
   --   },
   -- },
-
-  -- jsonnet filetype support
-  {
-    "google/vim-jsonnet",
-  },
 
   -- auto-save on focus lost
   {
