@@ -12,13 +12,36 @@ return {
   {
     "Mofiqul/dracula.nvim",
   },
+  {
+    "rebelot/kanagawa.nvim",
+  },
+  {
+    "nyoom-engineering/oxocarbon.nvim",
+  },
+  {
+    "scottmckendry/cyberdream.nvim",
+  },
+  {
+    "L-Colombo/oldschool.nvim",
+    config = true,
+  },
+  {
+    "bluz71/vim-moonfly-colors",
+  },
+  {
+    "bluz71/vim-nightfly-colors",
+  },
+  {
+    "projekt0n/github-nvim-theme",
+  },
   -- set default colorscheme
-  -- {
-  --   "LazyVim/LazyVim",
-  --   opts = {
-  --     colorscheme = "onedark",
-  --   },
-  -- },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "cyberdream",
+    },
+  },
+
   -- get better at neovim?
   {
     "m4xshen/hardtime.nvim",
