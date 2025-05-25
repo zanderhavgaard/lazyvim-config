@@ -19,6 +19,13 @@ return {
   --     colorscheme = "onedark",
   --   },
   -- },
+  -- get better at neovim?
+  {
+    "m4xshen/hardtime.nvim",
+    lazy = false,
+    dependencies = { "MunifTanjim/nui.nvim" },
+    opts = {},
+  },
 
   -- auto-save on focus lost
   {
