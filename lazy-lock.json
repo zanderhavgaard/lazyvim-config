@@ -68,8 +68,8 @@
   "vim-dadbod-completion": { "branch": "master", "commit": "a8dac0b3cf6132c80dc9b18bef36d4cf7a9e1fe6" },
   "vim-dadbod-ui": { "branch": "master", "commit": "460432301a5cb280ea265ddfa15c9f3dcd1d26b7" },
   "vim-helm": { "branch": "master", "commit": "ae1ebc160d2b9b90108477ab10df7a4fc501e358" },
-  "vim-moonfly-colors": { "branch": "master", "commit": "e356d55cedb24a6c4251d83ce28e0e2010e99d2f" },
-  "vim-nightfly-colors": { "branch": "master", "commit": "657aca970d4f79ea20a1d560b519aaafd794521d" },
+  "vim-moonfly-colors": { "branch": "master", "commit": "ac98f2ea1d44c9968dc5394b406a3a853a24f113" },
+  "vim-nightfly-colors": { "branch": "master", "commit": "d74bf6e5b0487c770d699c1d85377ac8b8360d01" },
   "which-key.nvim": { "branch": "main", "commit": "370ec46f710e058c9c1646273e6b225acf47cbed" },
   "yanky.nvim": { "branch": "main", "commit": "04775cc6e10ef038c397c407bc17f00a2f52b378" }
 }
