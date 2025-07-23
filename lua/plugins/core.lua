@@ -5,6 +5,22 @@ return {
   },
   {
     "navarasu/onedark.nvim",
+    config = function()
+      require("onedark").setup({
+        style = "dark",
+        toggle_style_key = "<leader>oo",
+        highlights = {
+          -- defualt comments can be hard to read ... try some other colors
+          -- ["@Comment"] = { fg = "#5C7E91" },
+          -- ["@Comment"] = { fg = "#7A8C59" },
+          -- ["@Comment"] = { fg = "#7393B3" },
+          ["@Comment"] = { fg = "#6A9FB5" },
+          -- ["@Comment"] = { fg = "#7B9B6F" },
+          -- ["@Comment"] = { fg = "#6E9272" },
+        },
+      })
+      require("onedark").load()
+    end,
   },
   {
     "ellisonleao/gruvbox.nvim",
