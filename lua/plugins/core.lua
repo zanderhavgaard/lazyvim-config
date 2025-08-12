@@ -131,6 +131,13 @@ return {
     },
   },
 
+  {
+    "nvzone/typr",
+    dependencies = "nvzone/volt",
+    opts = {},
+    cmd = { "Typr", "TyprStats" },
+  },
+
   -- # TODO: enable/disable these conditionally
   -- For when running on NixOS
   -- disable installing binaries from mason - use system binaries instead
