@@ -59,30 +59,30 @@ return {
   },
 
   -- neovim~orgmode~neorg
-  {
-    "nvim-neorg/neorg",
-    ft = "norg", -- only load on norg files
-    lazy = false,
-    version = "*",
-    config = function()
-      require("neorg").setup({
-        load = {
-          ["core.defaults"] = {},
-          ["core.concealer"] = {},
-          ["core.dirman"] = {
-            config = {
-              workspaces = {
-                notes = "~/notes",
-              },
-              default_workspace = "notes",
-            },
-          },
-        },
-      })
-      vim.wo.foldlevel = 99
-      -- vim.wo.conceallevel = 2
-    end,
-  },
+  -- {
+  --   "nvim-neorg/neorg",
+  --   ft = "norg", -- only load on norg files
+  --   lazy = false,
+  --   version = "*",
+  --   config = function()
+  --     require("neorg").setup({
+  --       load = {
+  --         ["core.defaults"] = {},
+  --         ["core.concealer"] = {},
+  --         ["core.dirman"] = {
+  --           config = {
+  --             workspaces = {
+  --               notes = "~/notes",
+  --             },
+  --             default_workspace = "notes",
+  --           },
+  --         },
+  --       },
+  --     })
+  --     vim.wo.foldlevel = 99
+  --     -- vim.wo.conceallevel = 2
+  --   end,
+  -- },
 
   -- show hidden files in snacks picker/explorer
   {
