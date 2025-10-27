@@ -32,16 +32,15 @@ return {
     --       ["@Comment"] = { fg = "#6A9FB5" },
     --     },
     --   })
-    --   require("onedark").load()
     -- end,
   },
   -- set default colorscheme
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "kanagawa",
-    },
-  },
+  -- {
+  --   "LazyVim/LazyVim",
+  --   opts = {
+  --     colorscheme = "onedark",
+  --   },
+  -- },
 
   -- neovim~orgmode~neorg
   -- {
