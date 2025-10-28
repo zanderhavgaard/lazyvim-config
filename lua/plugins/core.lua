@@ -35,12 +35,12 @@ return {
     -- end,
   },
   -- set default colorscheme
-  -- {
-  --   "LazyVim/LazyVim",
-  --   opts = {
-  --     colorscheme = "onedark",
-  --   },
-  -- },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "kanagawa",
+    },
+  },
 
   -- neovim~orgmode~neorg
   -- {
