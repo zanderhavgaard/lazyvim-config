@@ -22,6 +22,12 @@ return {
     "rebelot/kanagawa.nvim",
   },
   {
+    "fynnfluegge/monet.nvim",
+  },
+  {
+    "vague-theme/vague.nvim",
+  },
+  {
     "navarasu/onedark.nvim",
     -- config = function()
     --   require("onedark").setup({
