@@ -48,6 +48,19 @@ return {
     },
   },
 
+  -- disable markdownlint rule MD013 (line length)
+  {
+    "mfussenegger/nvim-lint",
+    optional = true,
+    opts = {
+      linters = {
+        ["markdownlint-cli2"] = {
+          args = { "--config", "/home/zander/lazyvim-config/external/markdownlint-cli2.yaml", "--" },
+        },
+      },
+    },
+  },
+
   -- neovim~orgmode~neorg
   -- {
   --   "nvim-neorg/neorg",
