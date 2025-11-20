@@ -22,29 +22,23 @@ return {
     "rebelot/kanagawa.nvim",
   },
   {
-    "fynnfluegge/monet.nvim",
-  },
-  {
-    "vague-theme/vague.nvim",
-  },
-  {
     "navarasu/onedark.nvim",
-    -- config = function()
-    --   require("onedark").setup({
-    --     style = "dark",
-    --     toggle_style_key = "<leader>oo",
-    --     highlights = {
-    --       -- defualt comments can be hard to read ... use a different color
-    --       ["@Comment"] = { fg = "#6A9FB5" },
-    --     },
-    --   })
-    -- end,
+    config = function()
+      require("onedark").setup({
+        style = "dark",
+        toggle_style_key = "<leader>oo",
+        highlights = {
+          -- defualt comments can be hard to read ... use a different color
+          ["@Comment"] = { fg = "#6A9FB5" },
+        },
+      })
+    end,
   },
   -- set default colorscheme
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "dracula",
+      colorscheme = "kanagawa",
     },
   },
 
@@ -58,6 +52,14 @@ return {
           args = { "--config", "/home/zander/lazyvim-config/external/markdownlint-cli2.yaml", "--" },
         },
       },
+    },
+  },
+
+  -- disable NES for sidekick
+  {
+    "folke/sidekick.nvim",
+    opts = {
+      nes = { enabled = false },
     },
   },
 
