@@ -34,11 +34,12 @@ return {
       })
     end,
   },
+  -- comment out to use default: tokyonight
   -- set default colorscheme
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "kanagawa",
+      colorscheme = "onedark",
     },
   },
 
