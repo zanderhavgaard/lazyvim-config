@@ -36,12 +36,12 @@ return {
   },
   -- comment out to use default: tokyonight
   -- set default colorscheme
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "onedark",
-    },
-  },
+  -- {
+  --   "LazyVim/LazyVim",
+  --   opts = {
+  --     colorscheme = "onedark",
+  --   },
+  -- },
 
   -- disable markdownlint rule MD013 (line length)
   {
