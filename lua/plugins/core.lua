@@ -13,23 +13,14 @@ return {
     "scottmckendry/cyberdream.nvim",
   },
   {
-    "bluz71/vim-moonfly-colors",
-  },
-  {
-    "bluz71/vim-nightfly-colors",
-  },
-  {
     "rebelot/kanagawa.nvim",
   },
   {
-    "miikanissi/modus-themes.nvim",
-  },
-  {
     "navarasu/onedark.nvim",
+    priority = 1000,
     config = function()
       require("onedark").setup({
-        style = "dark",
-        toggle_style_key = "<leader>oo",
+        style = "darker",
         highlights = {
           -- defualt comments can be hard to read ... use a different color
           ["@Comment"] = { fg = "#6A9FB5" },
@@ -42,7 +33,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "cyberdream",
+      colorscheme = "onedark",
     },
   },
 
@@ -140,12 +131,12 @@ return {
     },
   },
 
-  {
-    "nvzone/typr",
-    dependencies = "nvzone/volt",
-    opts = {},
-    cmd = { "Typr", "TyprStats" },
-  },
+  -- {
+  --   "nvzone/typr",
+  --   dependencies = "nvzone/volt",
+  --   opts = {},
+  --   cmd = { "Typr", "TyprStats" },
+  -- },
 
   -- # TODO: enable/disable these conditionally
   -- For when running on NixOS
