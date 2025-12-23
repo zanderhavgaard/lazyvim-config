@@ -20,7 +20,7 @@ return {
     priority = 1000,
     config = function()
       require("onedark").setup({
-        style = "darker",
+        style = "dark",
         highlights = {
           -- defualt comments can be hard to read ... use a different color
           ["@Comment"] = { fg = "#6A9FB5" },
@@ -28,12 +28,39 @@ return {
       })
     end,
   },
+
+  {
+    "NvChad/ui",
+    lazy = false,
+    priority = 1000,
+    init = function()
+      -- base46 expects this (and uses it during compile/load)
+      vim.g.base46_cache = vim.fn.stdpath("data") .. "/base46/"
+    end,
+    config = function()
+      require("nvchad")
+    end,
+  },
+
+  {
+    "NvChad/base46",
+    lazy = false,
+    priority = 999,
+    build = function()
+      require("base46").load_all_highlights()
+    end,
+    config = function()
+      require("base46").load_all_highlights()
+    end,
+  },
+
   -- comment out to use default: tokyonight
   -- set default colorscheme
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "onedark",
+      -- colorscheme = "onedark",
+      colorscheme = nil,
     },
   },
 
