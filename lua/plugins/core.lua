@@ -16,6 +16,11 @@ return {
     "rebelot/kanagawa.nvim",
   },
   {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000,
+  },
+  {
     "navarasu/onedark.nvim",
     priority = 1000,
     config = function()
@@ -33,7 +38,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "kanagawa",
+      colorscheme = "catppuccin",
     },
   },
 
