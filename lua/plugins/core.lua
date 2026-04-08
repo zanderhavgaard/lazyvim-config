@@ -56,12 +56,12 @@ return {
   },
 
   -- disable NES for sidekick
-  {
-    "folke/sidekick.nvim",
-    opts = {
-      nes = { enabled = false },
-    },
-  },
+  -- {
+  --   "folke/sidekick.nvim",
+  --   opts = {
+  --     nes = { enabled = false },
+  --   },
+  -- },
 
   -- neovim~orgmode~neorg
   -- {
