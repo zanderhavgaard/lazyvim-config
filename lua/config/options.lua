@@ -4,3 +4,6 @@
 
 -- don't try to change the root after opening neovim
 vim.g.root_spec = { "cwd" }
+
+-- use basedpyright over pyright
+vim.g.lazyvim_python_lsp = "basedpyright"
