@@ -7,3 +7,6 @@ vim.g.root_spec = { "cwd" }
 
 -- use basedpyright over pyright
 vim.g.lazyvim_python_lsp = "basedpyright"
+
+-- https://github.com/neovide/neovide/issues/3457
+vim.o.guifont = "MartianMono Nerd Font"
