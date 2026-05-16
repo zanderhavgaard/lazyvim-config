@@ -33,12 +33,19 @@ return {
       })
     end,
   },
+  {
+    "AstroNvim/astrotheme",
+    priority = 1000,
+    config = function()
+      require("astrotheme").setup({})
+    end,
+  },
   -- comment out to use default: tokyonight
   -- set default colorscheme
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "kanagawa",
+      colorscheme = "astrodark",
     },
   },
 
