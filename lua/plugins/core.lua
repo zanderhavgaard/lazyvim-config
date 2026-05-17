@@ -2,39 +2,52 @@ return {
   -- Install some colorschemes
   {
     "folke/tokyonight.nvim",
+    lazy = true,
+    priority = 1000,
   },
   {
     "ellisonleao/gruvbox.nvim",
+    lazy = true,
+    priority = 1000,
   },
   {
     "Mofiqul/dracula.nvim",
+    lazy = true,
+    priority = 1000,
   },
   {
     "scottmckendry/cyberdream.nvim",
+    lazy = true,
+    priority = 1000,
   },
   {
     "rebelot/kanagawa.nvim",
+    lazy = true,
+    priority = 1000,
   },
   {
     "catppuccin/nvim",
     name = "catppuccin",
+    lazy = true,
     priority = 1000,
   },
   {
     "navarasu/onedark.nvim",
+    lazy = true,
     priority = 1000,
     config = function()
       require("onedark").setup({
         style = "dark",
         highlights = {
           -- defualt comments can be hard to read ... use a different color
-          ["@Comment"] = { fg = "#6A9FB5" },
+          ["@comment"] = { fg = "#6A9FB5" },
         },
       })
     end,
   },
   {
     "AstroNvim/astrotheme",
+    lazy = false,
     priority = 1000,
     config = function()
       require("astrotheme").setup({})
@@ -56,7 +69,7 @@ return {
     opts = {
       linters = {
         ["markdownlint-cli2"] = {
-          args = { "--config", "/home/zander/lazyvim-config/external/markdownlint-cli2.yaml", "--" },
+          args = { "--config", vim.fn.stdpath("config") .. "/external/markdownlint-cli2.yaml", "--" },
         },
       },
     },
@@ -102,11 +115,6 @@ return {
     opts = {
       picker = {
         hidden = true,
-        sources = {
-          files = {
-            hidden = true,
-          },
-        },
       },
     },
   },

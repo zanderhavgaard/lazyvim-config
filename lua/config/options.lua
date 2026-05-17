@@ -9,4 +9,4 @@ vim.g.root_spec = { "cwd" }
 vim.g.lazyvim_python_lsp = "basedpyright"
 
 -- https://github.com/neovide/neovide/issues/3457
-vim.o.guifont = "MartianMono Nerd Font"
+vim.o.guifont = "MartianMono Nerd Font:h12"
