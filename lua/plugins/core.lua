@@ -33,7 +33,7 @@ return {
   },
   {
     "navarasu/onedark.nvim",
-    lazy = true,
+    lazy = false,
     priority = 1000,
     config = function()
       require("onedark").setup({
@@ -47,7 +47,7 @@ return {
   },
   {
     "AstroNvim/astrotheme",
-    lazy = false,
+    lazy = true,
     priority = 1000,
     config = function()
       require("astrotheme").setup({})
