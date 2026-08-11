@@ -26,6 +26,12 @@ return {
     priority = 1000,
   },
   {
+    "wtfox/luna.nvim",
+    lazy = true,
+    priority = 1000,
+    opts = {},
+  },
+  {
     "catppuccin/nvim",
     name = "catppuccin",
     lazy = true,
@@ -58,7 +64,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "onedark",
+      colorscheme = "luna",
     },
   },
 
