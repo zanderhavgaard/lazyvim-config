@@ -43,7 +43,7 @@ return {
     priority = 1000,
     config = function()
       require("onedark").setup({
-        style = "darker",
+        style = "dark",
         highlights = {
           -- defualt comments can be hard to read ... use a different color
           ["@comment"] = { fg = "#6A9FB5" },
@@ -64,7 +64,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "tokyonight",
+      colorscheme = "onedark",
     },
   },
 
