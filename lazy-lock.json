@@ -1,6 +1,6 @@
 {
   "LazyVim": { "branch": "main", "commit": "999700997f72227187d49d8b92667183dc7fc809" },
-  "SchemaStore.nvim": { "branch": "main", "commit": "411163b2be396495c76788a016cb1354f1e8acd0" },
+  "SchemaStore.nvim": { "branch": "main", "commit": "a2df328158160aca44e6f996becbab12214b7172" },
   "astrotheme": { "branch": "main", "commit": "f6883da9b88ac810e6e5568db9a74ba6d6672d4b" },
   "auto-save.nvim": { "branch": "main", "commit": "5961d5e041c227e4d99e9e44e3a7ce9c6826c145" },
   "blink.cmp": { "branch": "main", "commit": "78336bc89ee5365633bcf754d93df01678b5c08f" },
