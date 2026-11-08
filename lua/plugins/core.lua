@@ -76,6 +76,18 @@ return {
     },
   },
 
+  -- helix-style diagnostics: full messages as virtual lines under the cursor line,
+  -- short end-of-line virtual text on every other line
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      diagnostics = {
+        virtual_text = { current_line = false },
+        virtual_lines = { current_line = true },
+      },
+    },
+  },
+
   -- disable markdownlint rule MD013 (line length)
   {
     "mfussenegger/nvim-lint",
