@@ -47,7 +47,11 @@ return {
         component_separators = { left = "│", right = "│" },
       },
       sections = {
-        lualine_z = {}, -- no clock
+        -- active LSP servers instead of the clock
+        -- (spinner while a server is busy, nothing once it's done)
+        lualine_z = {
+          { "lsp_status", symbols = { done = "", separator = " · " } },
+        },
       },
     },
   },
