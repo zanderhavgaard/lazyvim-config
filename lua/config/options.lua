@@ -14,4 +14,7 @@ vim.o.winborder = "rounded"
 if vim.g.neovide then
   -- https://github.com/neovide/neovide/issues/3457
   vim.o.guifont = "MartianMono Nerd Font:h12"
+
+  -- neovide animates the cursor and scrolling itself, don't stack mini.animate on top
+  vim.g.minianimate_disable = true
 end
