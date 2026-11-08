@@ -37,6 +37,29 @@ return {
         section_separators = { left = "", right = "" },
         component_separators = { left = "│", right = "│" },
       },
+      sections = {
+        lualine_z = {}, -- no clock
+      },
+    },
+  },
+
+  -- rounded borders on floating windows
+  -- (vim.o.winborder in options.lua covers diagnostics and other native floats)
+  {
+    "folke/noice.nvim",
+    opts = {
+      presets = {
+        lsp_doc_border = true, -- hover and signature help are rendered by noice
+      },
+    },
+  },
+  {
+    "saghen/blink.cmp",
+    opts = {
+      completion = {
+        menu = { border = "rounded" },
+        documentation = { window = { border = "rounded" } },
+      },
     },
   },
 
