@@ -1,7 +1,16 @@
 return {
   -- Install some colorschemes
   -- all lazy: lazy.nvim loads them on demand when running `:colorscheme <name>`
-  { "folke/tokyonight.nvim", lazy = true },
+  {
+    "folke/tokyonight.nvim",
+    lazy = true,
+    opts = {
+      -- default comments are a bit dim, use a brighter color from the palette
+      on_colors = function(c)
+        c.comment = c.dark5
+      end,
+    },
+  },
   { "ellisonleao/gruvbox.nvim", lazy = true },
   { "Mofiqul/dracula.nvim", lazy = true },
   { "scottmckendry/cyberdream.nvim", lazy = true },
