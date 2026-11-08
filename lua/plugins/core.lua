@@ -1,70 +1,42 @@
 return {
   -- Install some colorschemes
-  {
-    "folke/tokyonight.nvim",
-    lazy = true,
-    priority = 1000,
-  },
-  {
-    "ellisonleao/gruvbox.nvim",
-    lazy = true,
-    priority = 1000,
-  },
-  {
-    "Mofiqul/dracula.nvim",
-    lazy = true,
-    priority = 1000,
-  },
-  {
-    "scottmckendry/cyberdream.nvim",
-    lazy = true,
-    priority = 1000,
-  },
-  {
-    "rebelot/kanagawa.nvim",
-    lazy = true,
-    priority = 1000,
-  },
-  {
-    "wtfox/luna.nvim",
-    lazy = true,
-    priority = 1000,
-    opts = {},
-  },
-  {
-    "catppuccin/nvim",
-    name = "catppuccin",
-    lazy = true,
-    priority = 1000,
-  },
+  -- all lazy: lazy.nvim loads them on demand when running `:colorscheme <name>`
+  { "folke/tokyonight.nvim", lazy = true },
+  { "ellisonleao/gruvbox.nvim", lazy = true },
+  { "Mofiqul/dracula.nvim", lazy = true },
+  { "scottmckendry/cyberdream.nvim", lazy = true },
+  { "rebelot/kanagawa.nvim", lazy = true },
+  { "wtfox/luna.nvim", lazy = true, opts = {} },
+  { "catppuccin/nvim", name = "catppuccin", lazy = true },
   {
     "navarasu/onedark.nvim",
-    lazy = false,
-    priority = 1000,
-    config = function()
-      require("onedark").setup({
-        style = "dark",
-        highlights = {
-          -- defualt comments can be hard to read ... use a different color
-          ["@comment"] = { fg = "#6A9FB5" },
-        },
-      })
-    end,
-  },
-  {
-    "AstroNvim/astrotheme",
     lazy = true,
-    priority = 1000,
-    config = function()
-      require("astrotheme").setup({})
-    end,
+    opts = {
+      style = "dark",
+      highlights = {
+        -- default comments can be hard to read ... use a different color
+        ["@comment"] = { fg = "#6A9FB5" },
+      },
+    },
   },
-  -- comment out to use default: tokyonight
+  { "AstroNvim/astrotheme", lazy = true, opts = {} },
+
   -- set default colorscheme
   {
     "LazyVim/LazyVim",
     opts = {
       colorscheme = "tokyonight",
+    },
+  },
+
+  -- flat statusline instead of the powerline triangles
+  {
+    "nvim-lualine/lualine.nvim",
+    opts = {
+      options = {
+        section_separators = { left = "", right = "" },
+        component_separators = { left = "│", right = "│" },
+      },
     },
   },
 
@@ -81,40 +53,6 @@ return {
     },
   },
 
-  -- disable NES for sidekick
-  -- {
-  --   "folke/sidekick.nvim",
-  --   opts = {
-  --     nes = { enabled = false },
-  --   },
-  -- },
-
-  -- neovim~orgmode~neorg
-  -- {
-  --   "nvim-neorg/neorg",
-  --   ft = "norg", -- only load on norg files
-  --   lazy = false,
-  --   version = "*",
-  --   config = function()
-  --     require("neorg").setup({
-  --       load = {
-  --         ["core.defaults"] = {},
-  --         ["core.concealer"] = {},
-  --         ["core.dirman"] = {
-  --           config = {
-  --             workspaces = {
-  --               notes = "~/notes",
-  --             },
-  --             default_workspace = "notes",
-  --           },
-  --         },
-  --       },
-  --     })
-  --     vim.wo.foldlevel = 99
-  --     -- vim.wo.conceallevel = 2
-  --   end,
-  -- },
-
   -- show hidden files in snacks picker/explorer
   {
     "folke/snacks.nvim",
@@ -128,14 +66,6 @@ return {
       },
     },
   },
-
-  -- get better at neovim?
-  -- {
-  --   "m4xshen/hardtime.nvim",
-  --   lazy = false,
-  --   dependencies = { "MunifTanjim/nui.nvim" },
-  --   opts = {},
-  -- },
 
   -- auto-save on focus lost
   {
@@ -160,18 +90,4 @@ return {
       },
     },
   },
-
-  -- {
-  --   "nvzone/typr",
-  --   dependencies = "nvzone/volt",
-  --   opts = {},
-  --   cmd = { "Typr", "TyprStats" },
-  -- },
-
-  -- # TODO: enable/disable these conditionally
-  -- For when running on NixOS
-  -- disable installing binaries from mason - use system binaries instead
-  -- { "williamboman/mason-lspconfig.nvim", enabled = false },
-  -- { "williamboman/mason.nvim", enabled = false },
-  -- { "jay-babu/mason-nvim-dap.nvim", enabled = false },
 }
