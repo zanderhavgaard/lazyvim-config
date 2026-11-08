@@ -16,7 +16,8 @@ return {
       servers = {
         terraformls = { enabled = false },
         tofu_ls = {
-          filetypes = { "opentofu", "opentofu-vars", "terraform", "terraform-vars" },
+          -- .tofu files are mapped to the terraform filetypes above
+          filetypes = { "terraform", "terraform-vars" },
         },
       },
     },
