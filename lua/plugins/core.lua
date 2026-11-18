@@ -5,6 +5,8 @@ return {
     "folke/tokyonight.nvim",
     lazy = true,
     opts = {
+      -- dim windows that don't have focus
+      dim_inactive = true,
       -- default comments are a bit dim, use a brighter color from the palette
       on_colors = function(c)
         c.comment = c.dark5
