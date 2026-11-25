@@ -104,6 +104,7 @@ return {
   },
 
   -- show hidden files in snacks picker/explorer
+  -- (the explorer also shows gitignored files)
   {
     "folke/snacks.nvim",
     opts = {
@@ -111,7 +112,7 @@ return {
         sources = {
           files = { hidden = true },
           grep = { hidden = true },
-          explorer = { hidden = true },
+          explorer = { hidden = true, ignored = true },
         },
       },
     },
